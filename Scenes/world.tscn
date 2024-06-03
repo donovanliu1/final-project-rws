@@ -432,5 +432,3 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2, 2)
 text = "press enter to retry"
-
-[connection signal="hit" from="Player" to="." method="_on_player_hit"]

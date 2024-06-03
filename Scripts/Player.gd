@@ -4,6 +4,7 @@ var speed
 var recovering
 var time_elapsed
 
+
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 4.5
@@ -34,7 +35,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	stamina.value = STAMINA_MAX
 	recovering = false
-	time_elapsed = 0.0
+	time_elapsed = 2.1
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -50,6 +51,21 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+	
+	if stamina.value == 0 and time_elapsed <= STAMINA_WAIT:
+		recovering = true
+		time_elapsed += delta
+		stamina.value += delta * 20.0
+	else if speed != SPRINT_SPEED:
+		if stamina.value == 0:
+		if time_elapsed < STAMINA_WAIT:
+			time_elapsed += delta
+			stamina.value += delta * 20.0
+		if stamina.value == 40:
+			time_elapsed = 0.0
+			#print(tempcheck, " - ", time_elapsed)
+			
+			#tempcheck += delta * 20.0
 		
 	# handle sprint
 	#print(velocity, " ", velocity.is_zero_approx())
@@ -88,8 +104,6 @@ func _physics_process(delta):
 	# head bob
 	#t_bob += delta * velocity.length() * float(is_on_floor())
 	#camera.transform.origin = _headbob(t_bob)
-	if speed != SPRINT_SPEED:
-		stamina.value += delta * 20.0
 	#fov
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE + velocity_clamped
