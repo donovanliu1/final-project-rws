@@ -35,7 +35,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	stamina.value = STAMINA_MAX
 	recovering = false
-	time_elapsed = 2.1
+	time_elapsed = 0.0
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -56,13 +56,17 @@ func _physics_process(delta):
 		recovering = true
 		time_elapsed += delta
 		stamina.value += delta * 20.0
-	else if speed != SPRINT_SPEED:
-		if stamina.value == 0:
-		if time_elapsed < STAMINA_WAIT:
+	elif speed != SPRINT_SPEED:
+		if recovering:
 			time_elapsed += delta
 			stamina.value += delta * 20.0
-		if stamina.value == 40:
+			if time_elapsed > STAMINA_WAIT:
+				recovering = false
+				time_elapsed = 0.0
+		elif stamina.value == stamina.max_value:
 			time_elapsed = 0.0
+		else:
+			stamina.value += delta * 20.0
 			#print(tempcheck, " - ", time_elapsed)
 			
 			#tempcheck += delta * 20.0
@@ -70,7 +74,7 @@ func _physics_process(delta):
 	# handle sprint
 	#print(velocity, " ", velocity.is_zero_approx())
 	#print("player position:", position)
-	if Input.is_action_pressed("sprint") and is_on_floor() and stamina.value > 0:
+	if Input.is_action_pressed("sprint") and is_on_floor() and stamina.value > 0 and not recovering:
 		speed = SPRINT_SPEED
 		if pythagorean_theorem(velocity) >= 1:
 			stamina.value -= 35.0 * delta			

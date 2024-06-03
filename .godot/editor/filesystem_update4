@@ -1,7 +1,6 @@
 res://Scenes/main_menu.tscn
 res://Assets/Themes/white_grid.tres
 res://Assets/Themes/wood_floor.tres
-res://Scripts/Player.gd
 res://Scenes/monster.tscn
 res://Scenes/player.tscn
 res://Scenes/world.tscn
