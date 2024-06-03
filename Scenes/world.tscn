@@ -380,8 +380,8 @@ size = Vector3(198, 78, 198)
 material = ExtResource("8_l5rcq")
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9939, 2.90669, -8.10245)
-size = Vector3(1, 6, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9939, 2.90669, -8.60245)
+size = Vector3(1, 6, 7)
 material = ExtResource("8_l5rcq")
 
 [node name="UserInterface" type="Control" parent="."]
