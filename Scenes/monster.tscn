@@ -1,8 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://7bdmroqk35ft"]
+[gd_scene load_steps=5 format=3 uid="uid://7bdmroqk35ft"]
 
 [ext_resource type="Script" path="res://Scripts/monster.gd" id="1_ebies"]
-[ext_resource type="Texture2D" uid="uid://bl2ujfpukxkv5" path="res://Assets/IMG_7827.jpg" id="1_ugl30"]
-[ext_resource type="Texture2D" uid="uid://b3qji6elwkwux" path="res://Assets/unnamed.jpg" id="3_fs4s1"]
 [ext_resource type="PackedScene" uid="uid://csyf16wi0m3t4" path="res://Assets/donovanthing.glb" id="4_l8gv2"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_og861"]
@@ -15,24 +13,11 @@ collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_ebies")
 
-[node name="RaymondFace" type="Sprite3D" parent="."]
-visible = false
-pixel_size = 0.001
-shaded = true
-texture = ExtResource("1_ugl30")
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.039)
-visible = false
-pixel_size = 0.001
-shaded = true
-texture = ExtResource("3_fs4s1")
-
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_desired_distance = 0.1
 target_desired_distance = 0.1
 path_height_offset = -1.0
-path_max_distance = 0.01
+path_max_distance = 2.01
 avoidance_enabled = true
 debug_enabled = true
 

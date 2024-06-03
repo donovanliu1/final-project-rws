@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6macspnnn0we"]
+
+[ext_resource type="Texture2D" uid="uid://cur54nvnadac" path="res://Assets/Wood06_MR_4K/Wood06_4K_BaseColor.png" id="1_cgx1d"]
+
+[resource]
+render_priority = 2
+albedo_texture = ExtResource("1_cgx1d")
+uv1_triplanar = true
+uv1_world_triplanar = true
