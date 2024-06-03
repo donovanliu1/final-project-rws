@@ -4,3 +4,8 @@ res://Assets/Themes/wood_floor.tres
 res://Scenes/monster.tscn
 res://Scenes/player.tscn
 res://Scenes/world.tscn
+res://Scripts/monster.gd
+res://Scripts/Player.gd
+res://Scripts/world.gd
+res://Assets/Themes/brick_wall.tres
+res://Assets/Themes/stone_wall.tres

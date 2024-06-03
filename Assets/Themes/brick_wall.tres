@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://xmeovoov1uw"]
+
+[ext_resource type="Texture2D" uid="uid://ee4m7b5814ju" path="res://Assets/BrickWall19_MR_4K(1)/BrickWall19_4K_BaseColor.png" id="1_m74xr"]
+
+[resource]
+albedo_texture = ExtResource("1_m74xr")
+uv1_triplanar = true
+uv1_world_triplanar = true

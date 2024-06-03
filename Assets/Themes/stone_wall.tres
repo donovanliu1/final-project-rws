@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cjud0h4l8mt2h"]
+
+[ext_resource type="Texture2D" uid="uid://ch4j0glpqieug" path="res://Assets/StoneWall01_MR_2K/StoneWall01_2K_BaseColor.png" id="1_m6ehy"]
+
+[resource]
+albedo_texture = ExtResource("1_m6ehy")
+uv1_triplanar = true
+uv1_world_triplanar = true
