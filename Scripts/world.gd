@@ -32,3 +32,11 @@ func _on_player_hit():
 	
 	$Monster.position = temppos
 	
+
+
+func _on_area_3d_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_area_3d_body_entered(body):
+	get_tree().change_scene_to_file("res://Scenes/win_screen.tscn")

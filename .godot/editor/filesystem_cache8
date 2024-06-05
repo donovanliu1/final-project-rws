@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717603272
+::res://::1717610894
 ::res://addons/::1717603225
 ::res://addons/csgtomesh/::1717603279
 icon.png::Image::7258767504904318680::1717603225::1717603279::1::::<><>::
@@ -9,7 +9,7 @@ ui.gd::GDScript::-1::1717603225::0::1::::CSGMeshButton<>Button<>::
 ui.tscn::PackedScene::3685700265258748321::1717603225::0::1::::<><>::res://addons/csgtomesh/ui.gd
 ::res://addons/csgtomesh/demo/::1717603225
 test.tscn::PackedScene::6661957968668415157::1717603225::0::1::::<><>::
-::res://Assets/::1717604204
+::res://Assets/::1717604213
 crosshair001.png::CompressedTexture2D::6178637531586639836::1717603220::1717603220::1::::<><>::
 donovanthing.glb::PackedScene::6086137297180527363::1717603220::1717603220::1::::<><>::
 donovanthing_IMG_7827.jpg::CompressedTexture2D::6034567522893955512::1717603220::1717603220::1::::<><>::
@@ -198,17 +198,18 @@ Wood06_4K_BaseColor.png::CompressedTexture2D::182752549282568382::1717603220::17
 Wood06_4K_Height.png::CompressedTexture2D::8597351724301696297::1717603220::1717603220::1::::<><>::
 Wood06_4K_Normal.png::CompressedTexture2D::2511220378238525180::1717603220::1717603220::1::::<><>::
 Wood06_4K_Roughness.png::CompressedTexture2D::7481865730177595802::1717603220::1717603220::1::::<><>::
-::res://Scenes/::1717603225
+::res://Scenes/::1717605066
 csg_combiner_3d.tscn::PackedScene::793035626194706580::1717603224::0::1::::<><>::uid://b5b2muawh11nq::::res://Assets/Themes/orange_grid.tres<>uid://4cujaxwrd38w::::res://Assets/BrickWall19_MR_4K(1)/BrickWall19_4K_Roughness.png<>uid://ee4m7b5814ju::::res://Assets/BrickWall19_MR_4K(1)/BrickWall19_4K_BaseColor.png<>uid://p3s0tmyu52n0::::res://Assets/Themes/stone_thingamajig.tres<>uid://cjud0h4l8mt2h::::res://Assets/Themes/stone_wall.tres<>uid://b6macspnnn0we::::res://Assets/Themes/wood_floor.tres
-main_menu.tscn::PackedScene::5175214867962792167::1717603224::0::1::::<><>::res://Scripts/main_menu.gd<>uid://bsk05luxqek5a::::res://Assets/MinecraftBold-nMK1.otf<>uid://cteovp0bx6u2c::::res://Assets/Themes/buttonfont.theme<>uid://b6ld6svh8yspp::::res://Assets/titlebackground.png<>uid://cedwjuwh6g58d::::res://Assets/raymond.png
-monster.tscn::PackedScene::2248311869941934005::1717603224::0::1::::<><>::res://Scripts/monster.gd<>uid://csyf16wi0m3t4::::res://Assets/donovanthing.glb
-options.tscn::PackedScene::2783702068129457543::1717603224::0::1::::<><>::uid://cteovp0bx6u2c::::res://Assets/Themes/buttonfont.theme<>res://Scripts/options.gd<>uid://b6ld6svh8yspp::::res://Assets/titlebackground.png<>uid://bsk05luxqek5a::::res://Assets/MinecraftBold-nMK1.otf
-player.tscn::PackedScene::224323821610241323::1717603224::0::1::::<><>::res://Scripts/Player.gd<>uid://374q6uoip6dn::::res://Assets/Untitled.png<>uid://cua8i0uhv8gtg::::res://Assets/crosshair001.png<>res://Scripts/PlayerSettings.gd
-world.tscn::PackedScene::5824570967309246786::1717603225::0::1::::<><>::res://Scripts/world.gd<>uid://dgwt0evwfqu2::::res://Scenes/player.tscn<>uid://7bdmroqk35ft::::res://Scenes/monster.tscn<>uid://bhxyn66tybvtd::::res://Assets/map6.glb<>uid://bsk05luxqek5a::::res://Assets/MinecraftBold-nMK1.otf<>uid://bl2ujfpukxkv5::::res://Assets/IMG_7827.jpg<>uid://clqvyfc2v5jw1::::res://Assets/mats/Material_1.tres<>uid://b4v15v6ykbd5a::::res://Assets/mats/Material.tres<>uid://ds06hm84dclky::::res://Assets/mats/brick.tres
-::res://Scripts/::1717603225
+main_menu.tscn::PackedScene::5175214867962792167::1717604715::0::1::::<><>::res://Scripts/main_menu.gd<>uid://bsk05luxqek5a::::res://Assets/MinecraftBold-nMK1.otf<>uid://cteovp0bx6u2c::::res://Assets/Themes/buttonfont.theme<>uid://b6ld6svh8yspp::::res://Assets/titlebackground.png<>uid://cedwjuwh6g58d::::res://Assets/raymond.png
+monster.tscn::PackedScene::2248311869941934005::1717604715::0::1::::<><>::res://Scripts/monster.gd<>uid://csyf16wi0m3t4::::res://Assets/donovanthing.glb
+options.tscn::PackedScene::2783702068129457543::1717605066::0::1::::<><>::uid://cteovp0bx6u2c::::res://Assets/Themes/buttonfont.theme<>res://Scripts/options.gd<>uid://b6ld6svh8yspp::::res://Assets/titlebackground.png<>uid://bsk05luxqek5a::::res://Assets/MinecraftBold-nMK1.otf
+player.tscn::PackedScene::224323821610241323::1717604716::0::1::::<><>::res://Scripts/Player.gd<>uid://374q6uoip6dn::::res://Assets/Untitled.png<>uid://cua8i0uhv8gtg::::res://Assets/crosshair001.png<>res://Scripts/PlayerSettings.gd
+win_screen.tscn::PackedScene::8304007968426651650::1717604729::0::1::::<><>::uid://cxhaxbpkpbiir::::res://Assets/Screenshot 2024-06-05 121633.png<>uid://cteovp0bx6u2c::::res://Assets/Themes/buttonfont.theme
+world.tscn::PackedScene::5824570967309246786::1717604958::0::1::::<><>::res://Scripts/world.gd<>uid://dgwt0evwfqu2::::res://Scenes/player.tscn<>uid://7bdmroqk35ft::::res://Scenes/monster.tscn<>uid://bhxyn66tybvtd::::res://Assets/map6.glb<>uid://bsk05luxqek5a::::res://Assets/MinecraftBold-nMK1.otf<>uid://bl2ujfpukxkv5::::res://Assets/IMG_7827.jpg<>uid://clqvyfc2v5jw1::::res://Assets/mats/Material_1.tres<>uid://b4v15v6ykbd5a::::res://Assets/mats/Material.tres<>uid://ds06hm84dclky::::res://Assets/mats/brick.tres
+::res://Scripts/::1717604958
 main_menu.gd::GDScript::-1::1717603225::0::1::::<>Control<>::
 monster.gd::GDScript::-1::1717603225::0::1::::<>CharacterBody3D<>::
 options.gd::GDScript::-1::1717603225::0::1::::<>Control<>::
 Player.gd::GDScript::-1::1717603225::0::1::::<>CharacterBody3D<>::
-PlayerSettings.gd::GDScript::-1::1717603225::0::1::::<>Node3D<>::
+PlayerSettings.gd::GDScript::-1::1717604958::0::1::::<>Node3D<>::
 world.gd::GDScript::-1::1717603225::0::1::::<>Node3D<>::

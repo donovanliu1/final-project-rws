@@ -1,3 +1,4 @@
+CollisionShape3D
 Area3D
 Button
 Label
@@ -12,4 +13,3 @@ MarginContainer
 GridContainer
 TabContainer
 HBoxContainer
-RichTextLabel
