@@ -1,3 +1,9 @@
 res://Scripts/world.gd
 res://Scenes/world.tscn
 res://Assets/mats/brick.tres
+res://Scenes/main_menu.tscn
+res://Scenes/monster.tscn
+res://Scenes/player.tscn
+res://Scenes/options.tscn
+res://Scenes/win_screen.tscn
+res://Scenes/win_screen.gd

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqkr2eq7qexpi"]
+[gd_scene load_steps=4 format=3 uid="uid://dqkr2eq7qexpi"]
 
 [ext_resource type="Texture2D" uid="uid://cxhaxbpkpbiir" path="res://Assets/Screenshot 2024-06-05 121633.png" id="1_mqdla"]
 [ext_resource type="Theme" uid="uid://cteovp0bx6u2c" path="res://Assets/Themes/buttonfont.theme" id="2_bxrcp"]
+[ext_resource type="Script" path="res://Scenes/win_screen.gd" id="2_rpd4p"]
 
 [node name="WinScreen" type="Control"]
 layout_mode = 3
@@ -11,6 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_bxrcp")
+script = ExtResource("2_rpd4p")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(641, 363)
@@ -39,3 +41,5 @@ offset_bottom = 521.0
 scale = Vector2(2, 2)
 theme_override_font_sizes/font_size = 40
 text = "Quit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
