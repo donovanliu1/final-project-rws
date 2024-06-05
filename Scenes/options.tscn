@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfwpfwksmgbcp"]
+
+[ext_resource type="Theme" uid="uid://cteovp0bx6u2c" path="res://Assets/Themes/buttonfont.theme" id="1_tqha1"]
+[ext_resource type="Script" path="res://Scripts/options.gd" id="2_qk2lh"]
+[ext_resource type="Texture2D" uid="uid://b6ld6svh8yspp" path="res://Assets/titlebackground.png" id="2_vmh68"]
+[ext_resource type="FontFile" uid="uid://bsk05luxqek5a" path="res://Assets/MinecraftBold-nMK1.otf" id="3_t22g1"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tqha1")
+script = ExtResource("2_qk2lh")
+
+[node name="TitleBackground" type="Sprite2D" parent="."]
+position = Vector2(642.5, 364.5)
+scale = Vector2(0.666146, 0.669444)
+texture = ExtResource("2_vmh68")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+offset_left = 40.0
+offset_top = 250.0
+offset_right = 1240.0
+offset_bottom = 930.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tqha1")
+columns = 2
+
+[node name="SensitivityText" type="Label" parent="GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_t22g1")
+theme_override_font_sizes/font_size = 40
+text = "Sensitivity:"
+
+[node name="SensitivitySlider" type="HSlider" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+value = 100.0
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 40.0
+offset_top = 360.0
+offset_right = 296.0
+offset_bottom = 404.0
+theme_override_font_sizes/font_size = 40
+text = "Back"
+
+[connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_sensitivity_slider_drag_ended"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_button_pressed"]

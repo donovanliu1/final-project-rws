@@ -8,9 +8,11 @@ var time_elapsed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 4.5
-const SENSITIVITY = 0.002
+
 const STAMINA_MAX = 500
 const STAMINA_WAIT = 2.0
+
+var sensitivity = 0.002
 
 signal hit
 
@@ -39,8 +41,8 @@ func _ready():
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
-		head.rotate_y(-event.relative.x * SENSITIVITY)
-		camera.rotate_x(-event.relative.y * SENSITIVITY)
+		head.rotate_y(-event.relative.x * sensitivity)
+		camera.rotate_x(-event.relative.y * sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-70), deg_to_rad(70))
 
 func _physics_process(delta):
@@ -127,3 +129,8 @@ func pythagorean_theorem(velo) -> float:
 
 func _on_raymond_detector_body_entered(body):
 	hit.emit()
+
+func set_sensitivity(sens):
+	print("old: ", sensitivity)
+	sensitivity = sens
+	print("new: ", sensitivity)

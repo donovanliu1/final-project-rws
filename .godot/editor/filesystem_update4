@@ -14,3 +14,10 @@ res://Assets/mats/Material_2.tres
 res://Assets/mats/Material_3.tres
 res://Assets/mats/Material_4.tres
 res://Assets/mats/Default.tres
+res://Assets/Themes/buttonfont.theme
+res://Scripts/main_menu.gd
+res://Scenes/options.tscn
+res://Scenes/options.gd
+res://Scripts/options.gd
+res://Scripts/Player.gd
+res://Scripts/monster.gd
