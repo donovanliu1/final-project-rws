@@ -1,7 +1,11 @@
+StaticBody3D
+Sprite3D
+Label
+Node3D
+MeshInstance3D
 Button
 HSlider
 GridMap
-Label
 MarginContainer
 GridContainer
 TabContainer
@@ -9,6 +13,3 @@ HBoxContainer
 RichTextLabel
 LineEdit
 VBoxContainer
-Sprite2D
-MeshInstance3D
-StaticBody3D

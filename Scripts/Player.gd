@@ -12,7 +12,7 @@ const JUMP_VELOCITY = 4.5
 const STAMINA_MAX = 500
 const STAMINA_WAIT = 2.0
 
-var sensitivity = 0.002
+var sensitivity = 0.004
 
 signal hit
 
@@ -38,6 +38,8 @@ func _ready():
 	stamina.value = STAMINA_MAX
 	recovering = false
 	time_elapsed = 0.0
+	sensitivity = PlayerSettings.sensitivity
+	print(sensitivity)
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -57,18 +59,21 @@ func _physics_process(delta):
 	if stamina.value == 0 and time_elapsed <= STAMINA_WAIT:
 		recovering = true
 		time_elapsed += delta
-		stamina.value += delta * 20.0
+		#stamina.value += delta * 20.0
+		recursion_stamina(20, delta)
 	elif speed != SPRINT_SPEED:
 		if recovering:
 			time_elapsed += delta
-			stamina.value += delta * 20.0
+			#stamina.value += delta * 20.0
+			recursion_stamina(20, delta)
 			if time_elapsed > STAMINA_WAIT:
 				recovering = false
 				time_elapsed = 0.0
 		elif stamina.value == stamina.max_value:
 			time_elapsed = 0.0
 		else:
-			stamina.value += delta * 20.0
+			recursion_stamina(20, delta)
+			#stamina.value += delta * 20.0
 			#print(tempcheck, " - ", time_elapsed)
 			
 			#tempcheck += delta * 20.0
@@ -134,3 +139,10 @@ func set_sensitivity(sens):
 	print("old: ", sensitivity)
 	sensitivity = sens
 	print("new: ", sensitivity)
+
+func recursion_stamina(repetitions, delta):
+	if (repetitions == 0):
+		return
+	stamina.value += delta
+	recursion_stamina(repetitions - 1, delta)
+	

@@ -49,7 +49,9 @@ text = "Sensitivity:"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
+min_value = 1.0
 value = 100.0
+rounded = true
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 2
@@ -60,7 +62,18 @@ offset_bottom = 404.0
 theme_override_font_sizes/font_size = 40
 text = "Back"
 
-[connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_h_slider_drag_ended"]
+[node name="SensitivityPercent" type="Label" parent="."]
+layout_mode = 0
+offset_left = 731.0
+offset_top = 226.0
+offset_right = 843.0
+offset_bottom = 266.0
+theme = ExtResource("1_tqha1")
+theme_override_font_sizes/font_size = 30
+text = "100%"
+
 [connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_sensitivity_slider_drag_ended"]
+[connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="value_changed" from="GridContainer/SensitivitySlider" to="." method="_on_sensitivity_slider_value_changed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_button_pressed"]

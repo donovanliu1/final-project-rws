@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgwt0evwfqu2"]
+[gd_scene load_steps=8 format=3 uid="uid://dgwt0evwfqu2"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_mq7m5"]
 [ext_resource type="Texture2D" uid="uid://374q6uoip6dn" path="res://Assets/Untitled.png" id="2_iubcr"]
 [ext_resource type="Texture2D" uid="uid://cua8i0uhv8gtg" path="res://Assets/crosshair001.png" id="3_8kltu"]
+[ext_resource type="Script" path="res://Scripts/PlayerSettings.gd" id="4_igwlf"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3mu05"]
 
@@ -56,5 +57,8 @@ monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RaymondDetector"]
 shape = SubResource("CapsuleShape3D_vccri")
+
+[node name="PlayerSettings" type="Node3D" parent="."]
+script = ExtResource("4_igwlf")
 
 [connection signal="body_entered" from="RaymondDetector" to="." method="_on_raymond_detector_body_entered"]

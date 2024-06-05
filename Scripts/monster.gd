@@ -3,7 +3,7 @@ extends CharacterBody3D
 @export var player : CharacterBody3D
 @onready var nav_agent = $NavigationAgent3D
 
-var SPEED = 6.0
+var SPEED = 6.2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
