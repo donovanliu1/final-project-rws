@@ -50,7 +50,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 min_value = 1.0
-value = 100.0
+value = 50.0
 rounded = true
 
 [node name="BackButton" type="Button" parent="."]
@@ -70,7 +70,7 @@ offset_right = 843.0
 offset_bottom = 266.0
 theme = ExtResource("1_tqha1")
 theme_override_font_sizes/font_size = 30
-text = "100%"
+text = "50%"
 
 [connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_h_slider_drag_ended"]
 [connection signal="drag_ended" from="GridContainer/SensitivitySlider" to="." method="_on_sensitivity_slider_drag_ended"]
