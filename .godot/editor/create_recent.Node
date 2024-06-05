@@ -1,9 +1,11 @@
+Area3D
+Button
+Label
+Sprite2D
 StaticBody3D
 Sprite3D
-Label
 Node3D
 MeshInstance3D
-Button
 HSlider
 GridMap
 MarginContainer
@@ -11,5 +13,3 @@ GridContainer
 TabContainer
 HBoxContainer
 RichTextLabel
-LineEdit
-VBoxContainer

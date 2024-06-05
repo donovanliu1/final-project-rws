@@ -1,3 +1,3 @@
 extends Node3D
 
-var sensitivity = 0.004
+var sensitivity = 0.002

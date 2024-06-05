@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqkr2eq7qexpi"]
+
+[ext_resource type="Texture2D" uid="uid://cxhaxbpkpbiir" path="res://Assets/Screenshot 2024-06-05 121633.png" id="1_mqdla"]
+[ext_resource type="Theme" uid="uid://cteovp0bx6u2c" path="res://Assets/Themes/buttonfont.theme" id="2_bxrcp"]
+
+[node name="WinScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_bxrcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(641, 363)
+scale = Vector2(1.08, 1.08)
+texture = ExtResource("1_mqdla")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 61.0
+offset_top = 283.0
+offset_right = 293.0
+offset_bottom = 323.0
+scale = Vector2(2, 2)
+theme = ExtResource("2_bxrcp")
+theme_override_font_sizes/font_size = 40
+text = "you won!!!!"
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 205.0
+offset_top = 477.0
+offset_right = 293.0
+offset_bottom = 521.0
+scale = Vector2(2, 2)
+theme_override_font_sizes/font_size = 40
+text = "Quit"
