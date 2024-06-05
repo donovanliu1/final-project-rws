@@ -1,14 +1,12 @@
 extends Node3D
 
 @onready var player = $Player
-
+var map
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$UserInterface/GameOverScreen.modulate = Color.DIM_GRAY
 	$UserInterface/GameOverScreen.modulate = Color.DIM_GRAY
 	$UserInterface.hide()
-	
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

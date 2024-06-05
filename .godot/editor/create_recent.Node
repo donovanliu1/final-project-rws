@@ -1,4 +1,7 @@
-CSGCylinder3D
+MeshInstance3D
+StaticBody3D
+ImporterMeshInstance3D
 CSGBox3D
+CSGCylinder3D
 Sprite3D
 CSGPolygon3D
